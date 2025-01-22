@@ -1,46 +1,72 @@
-# 🧚 Winx 🧚
-## Un mic tutorial pentru git
+# Furry Friends
+
+Furry Friends este o aplicație esențială pentru comunitatea iubitorilor de animale, oferind o soluție modernă pentru sprijin reciproc în îngrijirea animalelor de companie. Într-o lume în care timpul este o resursă limitată, aplicația răspunde nevoii de a găsi ajutor de încredere și de a simplifica organizarea îngrijirii pentru animale.
 
 
-  1) **Clonare repo**<p>
- - Aveti aici link-ul la repo: https://github.com/PopaTudor13/Winx.git
- - Sau puteti da pe ![image](https://github.com/user-attachments/assets/608d08ce-8a11-4a3d-8f90-7931f79eba0b) si sa-l luati de acolo
- - Dupa in IDE doar dati __Open__ la proiect </p>
- 2) **Branch-uri**
-   - Pe branch-ul __*main*__ vom pune modificarile aduse codului abia dupa ce ne asiguram ca totul functioneaza si nu sunt foarte multe bug-uri. Ma gandesc sa facem asta inainte de demo-uri.
-   - In rest, noi vom lucra pe branch-ul __*development*__ . Si ca sa ajungem pe acest branch, sau pe altul ne folosim de *Checkout* ![capture 2](https://github.com/user-attachments/assets/14224cfe-a6a4-44d0-90db-c71e84e46254)
-   - Dupa ce am ajuns pe branch, va trebui sa-l aducem la zi cu cel de pe site. Pentru asta ne folosim de *fetch* si *merge* sau de *update*.
-   - Va recomand sa va uitati si la tutorialul asta inainte, unde explica putin mai pe larg: [Tutorial fetch](https://www.youtube.com/watch?v=tnz2I9rxrfk)
-   - Si daca vreti mai in detaliu, aveti aici documentatia de la Intellij: [Documentatie Intellij](https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html)
-     ![image](https://github.com/user-attachments/assets/bc28a975-1569-4988-8d51-90b5c0f2420e)
+Acest proiect a fost realizat în colaborare cu o echipă de studenți, fiecare contribuind cu idei și soluții pentru a dezvolta o aplicație eficientă și ușor de utilizat.
 
----
-   - Un tutorial pentru rezolvarea *merge conflicts* 😠 : [Tutorial merge conflicts](https://www.youtube.com/watch?v=mSfq1SoMocg)
 
---- 
-   > [!IMPORTANT]
-   > De fiecare data cand ne vom apuca de implementat o chestie noua ( *feature* ), vom crea un branch nou din *development*, pe care il vom numi "feature/nume_feature".
+## Funcționalități
+
+Aplicația Furry Friends oferă o serie de funcționalități intuitive și eficiente, menite să simplifice procesul de conectare și colaborare între iubitorii de animale.
+
+1. **Autentificare și înregistrare**
+   - Utilizatorii pot crea un cont nou printr-un proces de **Sign Up** simplu și sigur.
+   - După înregistrare, utilizatorii pot accesa platforma prin funcționalitatea **Login**.
+
+2. **Gestionarea animalelor de companie**
+   - Utilizatorii pot înregistra animalele lor prin opțiunea **Register Pet**, introducând detalii relevante despre acestea.
+   - Pe pagina **My Pets**, utilizatorii pot vizualiza și gestiona lista animalelor lor, având opțiunea de a adăuga o **Care Need** – specificarea perioadei în care un anumit animal are nevoie de ajutor.
+
+3. **Oferirea de ajutor**
+   - De pe **Home Page**, utilizatorii pot accesa butonul **Help a Pet**, care afișează o listă de animale și perioadele în care acestea necesită ajutor. Utilizatorii pot selecta animalele pe care doresc să le ajute și să își asume responsabilitatea pentru îngrijirea lor.
+
+4. **Urmărirea angajamentelor**
+   - Pe pagina **My Caring Sessions**, utilizatorii pot vedea detalii despre angajamentele lor curente, inclusiv perioadele și animalele de care s-au oferit să aibă grijă.
+
+5. **Sistem de recenzii**
+   - După încheierea unei sesiuni de îngrijire, proprietarul animalului poate oferi un **Review** voluntarului care a ajutat. Acest feedback contribuie la construirea unui mediu de încredere și la crearea unei reputații pentru utilizatori, promovând colaborarea sigură și transparentă în cadrul comunității.
+
+Aceste funcționalități sunt proiectate pentru a facilita un schimb organizat, transparent și eficient de sprijin între utilizatori, creând o experiență simplă și plăcută pentru toți cei implicați.
+
+## Setup-ul Aplicației
+
+Pentru a putea rula aplicația, este necesar să avem câteva informații despre cum este aceasta organizată. Aplicația este împărțită în două părți principale: **Front-End** și **Back-End**. Mai jos sunt pașii necesari pentru a configura fiecare componentă.
+
+### A. Partea de Front-End
+
+1. **Instalarea Node.js și npm:**
+   Înainte de a rula aplicația, trebuie să instalăm **Node.js** și **npm**. 
    
- ![image](https://github.com/user-attachments/assets/28317293-866e-46fc-b294-f0a048a5bf33) ![image](https://github.com/user-attachments/assets/ed6a9223-1a99-4b72-b4cc-da6d8cc20307)
+   - Descarcă și instalează Node.js de pe [site-ul oficial](https://nodejs.org/).
+   - După instalare, pentru a verifica dacă Node este instalat corect, rulează comanda:
+     ```bash
+     node --version
+     ```
+     Aceasta va returna versiunea curentă de Node utilizată.
+   
+2. **Instalarea dependențelor pentru Front-End:**
+   După ce ai instalat Node.js și npm, instalează dependențele necesare pentru aplicația front-end:
+   ```bash
+   npm install
 
-  3) __Pull Request__ (PR)
-   - Dupa ce facem commit-uri si push, vom face pull request. Pull request-ul il vom face de pe site.
-    ![image](https://github.com/user-attachments/assets/94183f06-6cb3-4146-ac8e-991b3a08c36a)
--
- ![image](https://github.com/user-attachments/assets/8333847b-3200-4c59-9a80-2e4b9c8ee41a)
-   - In casuta albastra 🟦  vom selecta *development* sau branch-ul in care dorim sa aducem modificarile
-   - In casuta verde 🟩 vom selecta *feature-ul* sau branch-ul din care dorim sa aducem modificarile
-   - In partea dreapta, daca apasam pe rotita ⚙️ incercuita cu galben 🟡 , vom putea adauga la PR-ul nostru *Reviewers* .
-   > [!IMPORTANT]
-   > Adaugati cel putin un reviewer, nu conteaza cine. Facem asta ca sa diminuam riscurile de a baga o 'prostie' in proiect.
-   > GitHub-ul permite sa dam *merge* si fara sa adaugam reviewers, asta fiindca nu am configurat niste setari, dar cu toate acestea sa nu dati *merge* pana persoana/persoanele care au fost puse la *Reviewers* nu au zis ca e ok ✔️.
-   - In final, persoana care va da ultimul review, va da si *merge*.
+ 3. **Rularea Serverului de Development:**
+    După ce toate dependențele au fost instalate, aplicația front-end poate fi rulată folosind comanda:
+  ```bash
+  npm run dev
+   ```
+  Aceasta va porni serverul de development și va deschide automat aplicația în browser la adresa:localhost:5173 
 
-### Aveti aici si o explicatie asemanatoare de la [Git](https://docs.github.com/en/get-started/start-your-journey/hello-world)
+  ### B. Partea de Back-End
+  1.	**Instalarea Gradle și Dependențele:**
+Asigurați-vă că aveți instalate toate dependențele Gradle pentru back-end. Gradle este folosit pentru gestionarea dependențelor și pentru compilarea aplicației back-end. Aceasta va asigura o rulare corectă a serviciilor.
+2.	**Rularea Serviciilor Back-End:**
+Pentru a porni aplicația back-end, trebuie să rulăm clasa StartRestServices, care va iniția serverele de servicii REST și va permite interacțiunea cu front-end-ul.
 
-# ☕ Spor la cafeluta corporatista ! ☕ 
-     
+ ### C. Conectarea la Baza de Date
+Pentru a asigura funcționarea corectă a aplicației, este esențial să ne conectăm la baza de date. Detaliile necesare pentru conectarea la baza de date (precum numele utilizatorului și parola) sunt disponibile în modulul RestServices, în fișierul bd.config din directorul resources.
 
 
+  
 
 
